@@ -74,7 +74,7 @@ function Connect({onConnect}){
                             isConnected ? (
                                 <p className="text-xs font-light text-cyan-400 text-center capitalize">connected:{account}</p>
                             ):(
-                                <button className="py-1 px-3 font-md text-cyan-400 border border-cyan-400 bg-black capitalize mx-auto rounded-2xl mt-8 flex items-center justify-center" onClick={connectWallet}>
+                                <button className="py-1 px-3 font-md text-cyan-400 border border-cyan-400 bg-black capitalize mx-auto rounded-2xl flex items-center justify-center" onClick={connectWallet}>
                                     connect wallet
                                 </button>
                             )
