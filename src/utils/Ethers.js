@@ -30,7 +30,7 @@ export const checkOwner = async()=>{
         return userAddress.toLowerCase() === owner.toLowerCase();
     }catch(error){
         console.error(error,"there is an error in getting the owner");
-        throw false;
+        return false;
     }
 }
 
@@ -133,7 +133,6 @@ export const addEducation= async(period,qualification,skillsLearned,institution)
             alert("You are not authorized to perform this action!");
             return;
         }
-
 
         const contract = await getContract(true);
         const tx = await contract.addEdus(period,qualification,skillsLearned,institution);
